@@ -1,13 +1,220 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+.todoApp {
+  width: 1200px;
+  height: 800px;
+  background-color: antiquewhite;
+  padding: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.userContainer {
+  width: 730px;
+  height: 419px;
+  background-color: aquamarine;
+}
+.input-holder {
+  width: 487px;
+  height: 76px;
+  border-radius: 4px;
+  font-size: 22px;
+  padding-left: 24px;
+  border: none;
+}
+.todo-container {
+  background-color: rgb(252, 252, 252);
+  color: #ffffff;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 600px;
+  margin-top: 30px;
+}
+.todo-item {
+  background-color: black;
+  font-size: 22px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  padding-left: 24px;
+  padding-right: 11px;
+}
+.todo-item-done {
+  background-color: #5efc8d;
+  font-size: 22px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  padding-left: 24px;
+  padding-right: 11px;
+}
+.add-btn {
+  width: 108px;
+  height: 76px;
+  border-radius: 4px;
+  background-color: #5efc8d;
+  font-size: 32px;
+
+  border: none;
+}
+.btns {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.done-image {
+  width: 24px;
+  height: 17px;
+}
+.delete-image {
+  width: 24px;
+  height: 27px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+}
+.user-image {
+  width: 20px;
+  height: 20px;
+}
+
+/* //////////////////////welcome page//////////////////////////////////*/
+.firstPage {
+  width: 1366px;
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+}
+.welcomeHeader {
+  color: #ffffff;
+  font-size: 54px;
+  text-transform: capitalize;
+}
+.battery {
+  width: 90px;
+  height: 165px;
+  margin-top: 74px;
+}
+.startBtn {
+  width: 388px;
+  height: 98px;
+  font-size: 48px;
+  text-transform: capitalize;
+  background-color: #5efc8d;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.startBtn:hover {
+  background-color: #ffffff;
+}
+
+/* //////////////////////Start page//////////////////////////////////*/
+.startPageContainer {
+  width: 1366px;
+  height: 768px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.startPageSection {
+  width: 588px;
+  height: 688px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 4px;
+  align-items: center;
+}
+.startHeader {
+  font-size: 48px;
+  color: black;
+  text-transform: capitalize;
+  margin-top: 33px;
+}
+.photoLogoHeader {
+  font-size: 22px;
+}
+.imgLogo {
+  width: 122px;
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e6ebff;
+}
+.inputHeader {
+  font-size: 22px;
+  text-transform: lowercase;
+}
+.aStarter {
+  color: black;
+  text-decoration: none;
+}
+.userNameInput {
+  width: 487px;
+  height: 76px;
+  font-size: 22px;
+  margin-top: 15px;
+  color: black;
+  background-color: #e6ebff;
+  border: none;
+  padding-left: 24px;
+  border-radius: 4px;
+}
+
+.aToList {
+  font-size: 32px;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+.signInLink {
+  width: 258px;
+  height: 66px;
+  background-color: #5efc8d;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.inputOfimg {
+  display: none;
+}
+.imageContainer {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.userImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
